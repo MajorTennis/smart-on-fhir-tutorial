@@ -27,7 +27,7 @@
                         date: 'gt2021-01-01'*/
                     }
                 });
-                how;
+
                 console.log(patient);
                 console.log(obv);
                 $.when(pt, obv).fail(onError);
