@@ -71,12 +71,25 @@
                         allergyTable += '<tr><td>No Allergies Found</td></tr>';
                     }
                     for (var i = 0; i < allergyLen; i++) {
+                        var reactionStr = [];
                         if (allergies[i].reaction !== undefined) {
                             alert(allergies[i].substance.text);
+                            for (
+                                var j = 0, jLen = allergies[i].reaction.length;
+                                j < jLen;
+                                j++
+                            ) {
+                                reactionStr.push(
+                                    allergies[i].reaction[j].manifestation[0]
+                                        .text
+                                );
+                            }
                         }
                         allergyTable +=
                             '<tr><td>' +
                             allergies[i].substance.text +
+                            '</td><td>' +
+                            reactionStr.join(', ') +
                             '</td></tr>';
                     }
                     allergyTable += '</table>';
