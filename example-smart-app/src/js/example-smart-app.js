@@ -72,7 +72,7 @@
                     }
                     for (var i = 0; i < allergyLen; i++) {
                         if (allergies[i].reaction !== undefined) {
-                            alert(alleregies[i].substance.text);
+                            alert(allergies[i].substance.text);
                         }
                         allergyTable +=
                             '<tr><td>' +
