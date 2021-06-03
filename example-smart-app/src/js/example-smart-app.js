@@ -65,7 +65,18 @@
                     );
                     var hdl = byCodes('2085-9');
                     var ldl = byCodes('2089-1');
-
+                    var allergyTable = '<table>';
+                    var allergyLen = allergies.length;
+                    if (allergyLen === 0) {
+                        allergyTable += '<tr><td>No Allergies Found</td></tr>';
+                    }
+                    for (var i = 0; i < len; i++) {
+                        allergyTable +=
+                            '<tr><td>' +
+                            allergies[i].substance.text +
+                            '</td></tr>';
+                    }
+                    allergyTable += '</table>';
                     var p = defaultPatient();
                     p.birthdate = patient.birthDate;
                     p.gender = gender;
