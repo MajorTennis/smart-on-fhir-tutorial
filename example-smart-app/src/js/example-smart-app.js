@@ -70,7 +70,7 @@
                     if (allergyLen === 0) {
                         allergyTable += '<tr><td>No Allergies Found</td></tr>';
                     }
-                    for (var i = 0; i < len; i++) {
+                    for (var i = 0; i < allergyLen; i++) {
                         allergyTable +=
                             '<tr><td>' +
                             allergies[i].substance.text +
