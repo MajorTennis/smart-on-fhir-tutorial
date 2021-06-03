@@ -71,7 +71,7 @@
                         allergyTable += '<tr><td>No Allergies Found</td></tr>';
                     }
                     for (var i = 0; i < allergyLen; i++) {
-                        if (allergies[i].reaction !== null) {
+                        if (allergies[i].reaction !== undefined) {
                             alert(alleregies[i].substance.text);
                         }
                         allergyTable +=
